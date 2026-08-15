@@ -8,7 +8,7 @@ import { dirname, join } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const TODAY = new Date();
-const ymd = TODAY.toISOString().slice(0, 10);
+const ymd = new Date(TODAY.getTime() + 8 * 3600 * 1000).toISOString().slice(0, 10); // 北京时间
 const dayIndex = Math.floor((TODAY - new Date(TODAY.getFullYear(), 0, 0)) / 86400000); // 年内第几天
 
 // ---------- 季节判定 ----------
