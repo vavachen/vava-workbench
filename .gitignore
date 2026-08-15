@@ -1,0 +1,6 @@
+# 本地记忆/工作区元数据（不进仓库）
+.workbuddy/
+node_modules/
+npm-debug.log*
+.DS_Store
+*.local
