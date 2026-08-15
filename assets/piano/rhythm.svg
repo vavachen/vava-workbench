@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">音符时值 · 一拍为单位</text>
+  <!-- whole note -->
+  <g transform="translate(40,90)">
+    <ellipse cx="20" cy="20" rx="15" ry="11" fill="#3a3a3a"/>
+    <text x="20" y="55" text-anchor="middle" font-size="11" fill="#6b6b6b">全音符 4拍</text>
+  </g>
+  <!-- half note -->
+  <g transform="translate(120,90)">
+    <ellipse cx="16" cy="22" rx="12" ry="9" fill="#fff" stroke="#3a3a3a" stroke-width="2"/>
+    <line x1="28" y1="22" x2="28" y2="2" stroke="#3a3a3a" stroke-width="2"/>
+    <text x="20" y="55" text-anchor="middle" font-size="11" fill="#6b6b6b">二分 2拍</text>
+  </g>
+  <!-- quarter note -->
+  <g transform="translate(200,90)">
+    <ellipse cx="16" cy="22" rx="11" ry="8" fill="#3a3a3a"/>
+    <line x1="27" y1="22" x2="27" y2="2" stroke="#3a3a3a" stroke-width="2"/>
+    <text x="20" y="55" text-anchor="middle" font-size="11" fill="#6b6b6b">四分 1拍</text>
+  </g>
+  <!-- eighth note -->
+  <g transform="translate(280,90)">
+    <ellipse cx="14" cy="24" rx="10" ry="7" fill="#3a3a3a"/>
+    <line x1="24" y1="24" x2="24" y2="2" stroke="#3a3a3a" stroke-width="2"/>
+    <path d="M24 2 Q40 6 36 20" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <text x="24" y="55" text-anchor="middle" font-size="11" fill="#6b6b6b">八分 ½拍</text>
+  </g>
+  <!-- metronome -->
+  <g transform="translate(350,70)">
+    <path d="M10 70 L24 4 L38 70 Z" fill="#B08968"/>
+    <line x1="24" y1="6" x2="24" y2="64" stroke="#fff" stroke-width="3"/>
+    <circle cx="24" cy="40" r="4" fill="#D08068"/>
+    <text x="24" y="92" text-anchor="middle" font-size="10.5" fill="#6b6b6b">节拍器</text>
+  </g>
+  <text x="210" y="180" text-anchor="middle" font-size="11" fill="#9a948a">时值越大「肚子越圆」，唱/弹的时间越长；跟节拍器数准拍子</text>
+  <!-- beat row -->
+  <g>
+    <rect x="60" y="200" width="300" height="26" rx="6" fill="#EAF2F0"/>
+    <g fill="#fff" stroke="#6BA8A0">
+      <circle cx="90" cy="213" r="9"/><circle cx="150" cy="213" r="9"/><circle cx="210" cy="213" r="9"/><circle cx="270" cy="213" r="9"/><circle cx="330" cy="213" r="9"/>
+    </g>
+    <text x="210" y="246" text-anchor="middle" font-size="10.5" fill="#6BA8A0">强 弱 次强 弱 · 4/4 拍</text>
+  </g>
+</svg>
