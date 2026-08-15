@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">五线谱 · 高音谱号与中央C</text>
+  <!-- treble staff -->
+  <g stroke="#7a7468" stroke-width="1.4">
+    <line x1="40" y1="70" x2="380" y2="70"/>
+    <line x1="40" y1="84" x2="380" y2="84"/>
+    <line x1="40" y1="98" x2="380" y2="98"/>
+    <line x1="40" y1="112" x2="380" y2="112"/>
+    <line x1="40" y1="126" x2="380" y2="126"/>
+  </g>
+  <!-- treble clef (schematic) -->
+  <path d="M70 60 Q58 100 78 118 Q92 128 82 138 Q70 146 78 120 Q86 96 96 78 Q104 64 92 58 Q80 54 78 70" fill="none" stroke="#4F8E86" stroke-width="3"/>
+  <text x="120" y="100" font-size="13" fill="#D08068" font-weight="700">高音谱号</text>
+  <!-- middle C ledger line below treble -->
+  <line x1="300" y1="154" x2="340" y2="154" stroke="#7a7468" stroke-width="1.4"/>
+  <circle cx="320" cy="154" r="6" fill="#D08068"/>
+  <text x="320" y="178" text-anchor="middle" font-size="11" fill="#D08068" font-weight="700">中央C</text>
+  <!-- bass staff -->
+  <g stroke="#7a7468" stroke-width="1.4">
+    <line x1="40" y1="186" x2="380" y2="186"/>
+    <line x1="40" y1="200" x2="380" y2="200"/>
+    <line x1="40" y1="214" x2="380" y2="214"/>
+    <line x1="40" y1="228" x2="380" y2="228"/>
+    <line x1="40" y1="242" x2="380" y2="242"/>
+  </g>
+  <text x="120" y="222" font-size="13" fill="#6BA8A0" font-weight="700">低音谱号</text>
+  <text x="210" y="244" text-anchor="middle" font-size="10.5" fill="#9a948a">高音谱号下加一线 = 中央C；低音谱号上加一线也是中央C</text>
+</svg>

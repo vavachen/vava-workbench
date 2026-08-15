@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">手指编号 · 1=大拇指</text>
+  <!-- LEFT hand -->
+  <g>
+    <text x="105" y="46" text-anchor="middle" font-size="12" fill="#6b6b6b">左手</text>
+    <g fill="#E8C9A8" stroke="#cba985" stroke-width="2">
+      <rect x="48" y="60" width="20" height="70" rx="10"/>
+      <rect x="74" y="54" width="20" height="76" rx="10"/>
+      <rect x="100" y="54" width="20" height="76" rx="10"/>
+      <rect x="126" y="60" width="20" height="70" rx="10"/>
+      <rect x="152" y="70" width="20" height="60" rx="10"/>
+      <path d="M40 120 Q108 138 178 120 L172 132 Q108 150 44 132 Z"/>
+    </g>
+    <g text-anchor="middle" font-size="13" font-weight="700" fill="#D08068">
+      <text x="58" y="102">5</text><text x="84" y="96">4</text><text x="110" y="96">3</text><text x="136" y="102">2</text><text x="162" y="112">1</text>
+    </g>
+  </g>
+  <!-- RIGHT hand -->
+  <g>
+    <text x="315" y="46" text-anchor="middle" font-size="12" fill="#6b6b6b">右手</text>
+    <g fill="#E8C9A8" stroke="#cba985" stroke-width="2">
+      <rect x="248" y="70" width="20" height="60" rx="10"/>
+      <rect x="274" y="60" width="20" height="70" rx="10"/>
+      <rect x="300" y="54" width="20" height="76" rx="10"/>
+      <rect x="326" y="54" width="20" height="76" rx="10"/>
+      <rect x="352" y="60" width="20" height="70" rx="10"/>
+      <path d="M240 132 Q310 150 376 120 L370 132 Q300 138 244 120 Z"/>
+    </g>
+    <g text-anchor="middle" font-size="13" font-weight="700" fill="#D08068">
+      <text x="258" y="112">1</text><text x="284" y="102">2</text><text x="310" y="96">3</text><text x="336" y="96">4</text><text x="362" y="102">5</text>
+    </g>
+  </g>
+  <text x="210" y="232" text-anchor="middle" font-size="11" fill="#9a948a">两只手大拇指都是「1」，向小指依次为 2-3-4-5</text>
+</svg>

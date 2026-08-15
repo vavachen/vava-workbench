@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">C 大调音阶 · 右手指法</text>
+  <!-- white keys -->
+  <g>
+    <rect x="20" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="66" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="112" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="158" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="204" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="250" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="296" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="342" y="70" width="44" height="130" rx="4" fill="#fff" stroke="#d8d2c8"/>
+  </g>
+  <g fill="#3a3a3a">
+    <rect x="56" y="70" width="26" height="84" rx="3"/>
+    <rect x="102" y="70" width="26" height="84" rx="3"/>
+    <rect x="194" y="70" width="26" height="84" rx="3"/>
+    <rect x="240" y="70" width="26" height="84" rx="3"/>
+    <rect x="286" y="70" width="26" height="84" rx="3"/>
+  </g>
+  <!-- finger numbers above -->
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#D08068">
+    <text x="42" y="58">1</text><text x="88" y="58">2</text><text x="134" y="58">3</text>
+    <text x="180" y="58">1</text><text x="226" y="58">2</text><text x="272" y="58">3</text>
+    <text x="318" y="58">4</text><text x="364" y="58">5</text>
+  </g>
+  <!-- note names below -->
+  <g text-anchor="middle" font-size="12" fill="#6b6b6b">
+    <text x="42" y="218">C</text><text x="88" y="218">D</text><text x="134" y="218">E</text>
+    <text x="180" y="218">F</text><text x="226" y="218">G</text><text x="272" y="218">A</text>
+    <text x="318" y="218">B</text><text x="364" y="218">C</text>
+  </g>
+  <text x="210" y="240" text-anchor="middle" font-size="10.5" fill="#9a948a">右手：1-2-3 后「穿指」回到 1，再到 4-5（C D E F G A B C）</text>
+</svg>

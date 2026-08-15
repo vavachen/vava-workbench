@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 150" width="360" height="150">
+  <rect width="360" height="150" rx="10" fill="#F8F6F2"/>
+  <text x="180" y="20" font-family="Sarasa Gothic SC, sans-serif" font-size="13" font-weight="700" fill="#5B5147" text-anchor="middle">C 和弦 = C · E · G（三个音一起按）</text>
+  <g stroke="#CDBFAE" stroke-width="1">
+    <rect x="20"  y="40" width="44" height="80" rx="3" fill="#6BA8A0"/>
+    <rect x="64"  y="40" width="44" height="80" rx="3" fill="#FBF3E2"/>
+    <rect x="108" y="40" width="44" height="80" rx="3" fill="#6BA8A0"/>
+    <rect x="152" y="40" width="44" height="80" rx="3" fill="#FBF3E2"/>
+    <rect x="196" y="40" width="44" height="80" rx="3" fill="#6BA8A0"/>
+    <rect x="240" y="40" width="44" height="80" rx="3" fill="#FBF3E2"/>
+    <rect x="284" y="40" width="44" height="80" rx="3" fill="#6BA8A0"/>
+  </g>
+  <g fill="#5B5147">
+    <rect x="52"  y="40" width="24" height="50" rx="3"/>
+    <rect x="140" y="40" width="24" height="50" rx="3"/>
+    <rect x="228" y="40" width="24" height="50" rx="3"/>
+    <rect x="316" y="40" width="24" height="50" rx="3"/>
+  </g>
+  <g font-family="Sarasa Gothic SC, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#5B5147">
+    <text x="42"  y="138">C</text>
+    <text x="130" y="138">E</text>
+    <text x="218" y="138">G</text>
+    <text x="306" y="138">C</text>
+  </g>
+</svg>

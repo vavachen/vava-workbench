@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">正确手型 · 手指立起</text>
+  <!-- keys strip -->
+  <g>
+    <rect x="30" y="170" width="360" height="26" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="78" y="170" width="18" height="16" fill="#333"/>
+    <rect x="124" y="170" width="18" height="16" fill="#333"/>
+    <rect x="196" y="170" width="18" height="16" fill="#333"/>
+    <rect x="242" y="170" width="18" height="16" fill="#333"/>
+    <rect x="288" y="170" width="18" height="16" fill="#333"/>
+  </g>
+  <!-- hand: palm + 5 curved fingers -->
+  <g fill="#E8C9A8" stroke="#cba985" stroke-width="2">
+    <path d="M70 150 Q60 120 110 116 Q170 112 210 122 Q250 128 250 150 L240 168 L80 168 Z"/>
+    <rect x="92" y="96" width="22" height="64" rx="11"/>
+    <rect x="122" y="86" width="22" height="74" rx="11"/>
+    <rect x="152" y="86" width="22" height="74" rx="11"/>
+    <rect x="182" y="92" width="22" height="68" rx="11"/>
+    <rect x="212" y="104" width="22" height="56" rx="11"/>
+  </g>
+  <!-- egg hint -->
+  <ellipse cx="158" cy="140" rx="26" ry="34" fill="none" stroke="#D08068" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="158" y="144" text-anchor="middle" font-size="11" fill="#D08068">像握鸡蛋</text>
+  <!-- annotations -->
+  <g font-size="11" fill="#6b6b6b">
+    <line x1="133" y1="86" x2="300" y2="60" stroke="#D08068" stroke-width="1.5"/>
+    <text x="304" y="56" fill="#D08068" font-weight="700">指关节立起</text>
+    <line x1="245" y1="150" x2="330" y2="150" stroke="#4F8E86" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="300" y="168" fill="#4F8E86">手腕放松</text>
+  </g>
+</svg>

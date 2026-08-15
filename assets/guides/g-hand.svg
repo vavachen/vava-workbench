@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="10" fill="#F8F6F2"/>
+  <g fill="#F2D9C9" stroke="#B08968" stroke-width="2">
+    <ellipse cx="100" cy="150" rx="52" ry="42"/>
+    <rect x="60"  y="60" width="20" height="80" rx="10"/>
+    <rect x="86"  y="45" width="20" height="95" rx="10"/>
+    <rect x="112" y="50" width="20" height="90" rx="10"/>
+    <rect x="138" y="65" width="20" height="75" rx="10"/>
+    <rect x="28" y="110" width="20" height="55" rx="10" transform="rotate(-35 38 137)"/>
+  </g>
+  <g font-family="Sarasa Gothic SC, sans-serif" font-size="14" font-weight="700" fill="#5B5147" text-anchor="middle">
+    <text x="70"  y="56">2</text>
+    <text x="96"  y="41">3</text>
+    <text x="122" y="46">4</text>
+    <text x="148" y="61">5</text>
+    <text x="24"  y="102">1</text>
+  </g>
+</svg>

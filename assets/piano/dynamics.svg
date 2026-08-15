@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">力度与表情记号</text>
+  <!-- p -->
+  <g transform="translate(50,70)">
+    <text x="0" y="40" font-size="38" font-weight="700" fill="#6BA8A0" font-style="italic">p</text>
+    <text x="6" y="70" font-size="12" fill="#6b6b6b">弱 (piano)</text>
+  </g>
+  <!-- f -->
+  <g transform="translate(140,70)">
+    <text x="0" y="40" font-size="40" font-weight="800" fill="#D08068" font-style="italic">f</text>
+    <text x="6" y="70" font-size="12" fill="#6b6b6b">强 (forte)</text>
+  </g>
+  <!-- crescendo hairpin -->
+  <g transform="translate(240,70)">
+    <path d="M0 30 L60 14 L60 46 Z" fill="none" stroke="#B08968" stroke-width="3"/>
+    <text x="0" y="70" font-size="12" fill="#6b6b6b">渐强 &#8594;</text>
+  </g>
+  <!-- decrescendo -->
+  <g transform="translate(330,70)">
+    <path d="M0 14 L60 30 L0 46 Z" fill="none" stroke="#B08968" stroke-width="3"/>
+    <text x="0" y="70" font-size="12" fill="#6b6b6b">&#8594; 渐弱</text>
+  </g>
+  <!-- phrase arc -->
+  <path d="M70 150 Q210 110 350 150" fill="none" stroke="#4F8E86" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <text x="210" y="142" text-anchor="middle" font-size="12" fill="#4F8E86">乐句连线 · 句尾「抬手呼吸」</text>
+  <text x="210" y="200" text-anchor="middle" font-size="11" fill="#9a948a">让旋律有「说话的语气」：强—弱—强，像句子一样起伏</text>
+</svg>
