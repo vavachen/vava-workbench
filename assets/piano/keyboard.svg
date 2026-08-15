@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">钢琴键盘 · 找到中央C</text>
+  <g>
+    <rect x="20" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="68" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="116" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="164" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="212" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="260" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="308" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+    <rect x="356" y="48" width="46" height="150" rx="4" fill="#fff" stroke="#d8d2c8"/>
+  </g>
+  <g fill="#3a3a3a">
+    <rect x="58" y="48" width="28" height="95" rx="3"/>
+    <rect x="106" y="48" width="28" height="95" rx="3"/>
+    <rect x="202" y="48" width="28" height="95" rx="3"/>
+    <rect x="250" y="48" width="28" height="95" rx="3"/>
+    <rect x="298" y="48" width="28" height="95" rx="3"/>
+  </g>
+  <rect x="20" y="48" width="46" height="150" rx="4" fill="#FDF3EC" stroke="#D08068" stroke-width="3"/>
+  <g text-anchor="middle" font-size="12" fill="#6b6b6b">
+    <text x="43" y="212" font-weight="700" fill="#D08068">中央C</text>
+    <text x="91" y="212">D</text>
+    <text x="139" y="212">E</text>
+    <text x="187" y="212">F</text>
+    <text x="235" y="212">G</text>
+    <text x="283" y="212">A</text>
+    <text x="331" y="212">B</text>
+    <text x="379" y="212">C</text>
+  </g>
+  <text x="210" y="238" text-anchor="middle" font-size="10.5" fill="#9a948a">黑键「两个一组·三个一组」，中央C在「两个黑键左边」的白键</text>
+</svg>
