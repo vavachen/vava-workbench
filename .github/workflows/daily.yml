@@ -32,6 +32,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "无变化，跳过提交"
           else
-            git commit -m "chore: 自动更新每日数据 $(date +%F)"
+            git commit -m "chore: 自动更新每日数据 $(TZ=Asia/Shanghai date +%F)"
             git push
           fi
