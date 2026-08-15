@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="420" height="250" fill="#F8F6F2"/>
+  <text x="210" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#4F8E86">正确坐姿 · 侧视图</text>
+  <!-- bench -->
+  <rect x="40" y="170" width="90" height="14" rx="6" fill="#B08968"/>
+  <rect x="52" y="184" width="8" height="34" fill="#9a7b5d"/>
+  <rect x="110" y="184" width="8" height="34" fill="#9a7b5d"/>
+  <!-- body -->
+  <path d="M70 170 Q72 120 92 110 Q104 104 110 116 L112 170 Z" fill="#6BA8A0"/>
+  <!-- head -->
+  <circle cx="96" cy="100" r="15" fill="#E8C9A8"/>
+  <!-- upper arm to keys -->
+  <path d="M108 120 Q150 130 196 150" stroke="#6BA8A0" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- piano body right -->
+  <rect x="200" y="120" width="170" height="60" rx="6" fill="#3a3a3a"/>
+  <rect x="200" y="120" width="170" height="14" rx="6" fill="#4a4a4a"/>
+  <!-- keys -->
+  <g>
+    <rect x="208" y="150" width="150" height="14" fill="#fff" stroke="#ccc"/>
+    <rect x="226" y="150" width="8" height="9" fill="#333"/>
+    <rect x="252" y="150" width="8" height="9" fill="#333"/>
+    <rect x="288" y="150" width="8" height="9" fill="#333"/>
+    <rect x="314" y="150" width="8" height="9" fill="#333"/>
+    <rect x="340" y="150" width="8" height="9" fill="#333"/>
+  </g>
+  <!-- annotations -->
+  <g font-size="11" fill="#6b6b6b">
+    <line x1="92" y1="120" x2="150" y2="60" stroke="#D08068" stroke-width="1.5"/>
+    <text x="154" y="56" fill="#D08068" font-weight="700">腰背挺直</text>
+    <line x1="150" y1="150" x2="150" y2="210" stroke="#B08968" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="120" y="226" fill="#B08968">身距一拳</text>
+    <line x1="208" y1="157" x2="208" y2="210" stroke="#6BA8A0" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="212" y="226" fill="#4F8E86">手肘≈键高</text>
+  </g>
+</svg>
