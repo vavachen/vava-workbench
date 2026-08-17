@@ -1301,17 +1301,16 @@ const Modules = (function () {
     if (typeof x.dailyLoaded !== 'string') x.dailyLoaded = '';
 
     // 每日自动加载联网数据（静态站通过 data/xhs-daily.json 更新）
+    // 策略：自动条目每天替换，手动条目保留；避免旧 auto 草稿堆积在顶部。
     function mergeDaily(j) {
       if (!j || x.dailyLoaded === j.generatedAt) return;
+      x.drafts = x.drafts.filter(function (dd) { return !dd.auto; });
       (j.drafts || []).forEach(function (dr) {
-        if (!x.drafts.find(function (dd) { return dd.title === dr.title; })) {
-          x.drafts.push(Object.assign({}, dr, { id: DB.uid(), date: UI.todayStr(), auto: true }));
-        }
+        x.drafts.push(Object.assign({}, dr, { id: DB.uid(), date: j.generatedAt, auto: true }));
       });
+      x.trends = x.trends.filter(function (tt) { return !tt.auto; });
       (j.trends || []).forEach(function (tr) {
-        if (!x.trends.find(function (tt) { return tt.title === tr.title; })) {
-          x.trends.push(Object.assign({}, tr, { id: DB.uid(), date: UI.todayStr(), auto: true }));
-        }
+        x.trends.push(Object.assign({}, tr, { id: DB.uid(), date: j.generatedAt, auto: true }));
       });
       x.daily = j;
       x.dailyLoaded = j.generatedAt;
@@ -1323,6 +1322,11 @@ const Modules = (function () {
         .then(function (r) { return r.json(); })
         .then(function (j) { mergeDaily(j); App.refresh(); })
         .catch(function () { window.__xhsDailyLoading = false; });
+    }
+    // 初始化清理：只保留与 dailyLoaded 同日的自动条目，防止旧版本数据堆积
+    if (x.dailyLoaded) {
+      x.drafts = x.drafts.filter(function (dd) { return !dd.auto || dd.date === x.dailyLoaded; });
+      x.trends = x.trends.filter(function (tt) { return !tt.auto || tt.date === x.dailyLoaded; });
     }
 
     // ===== 账号速览（紧凑）=====
@@ -1371,11 +1375,13 @@ const Modules = (function () {
     }
 
     // ===== 1. 今日草稿 =====
-    const draftKids = (x.drafts || []).map(function (dr) {
+    const dailyDate = x.daily && x.daily.generatedAt ? ' · ' + x.daily.generatedAt : '';
+    const sortedDrafts = (x.drafts || []).slice().sort(function (a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
+    const draftKids = sortedDrafts.map(function (dr) {
       return el('div', { class: 'li' }, [
         Batch.item(dr.id, function () { x.drafts = x.drafts.filter(function (y) { return y.id !== dr.id; }); }),
         el('div', { class: 'body' }, [
-          el('div', { class: 't' }, [(dr.acct === 'pet' ? '🐾 ' : '🔤 ') + dr.title, dr.auto ? el('span', { class: 'pill sage' }, '自动') : null]),
+          el('div', { class: 't' }, [(dr.acct === 'pet' ? '🐾 ' : '🔤 ') + dr.title, dr.auto ? el('span', { class: 'pill sage' }, '自动') : null, dr.date ? el('span', { class: 'muted', style: { fontSize: '11px', marginLeft: '6px' } }, dr.date) : null]),
           el('div', { class: 's' }, dr.body),
           dr.tags ? el('div', { class: 's', style: { color: 'var(--sage-d)' } }, '🏷 ' + dr.tags) : null,
           dr.inspiredBy ? el('div', { class: 'muted', style: { fontSize: '11px', marginTop: '4px' } }, '💡 灵感：' + dr.inspiredBy) : null
@@ -1384,7 +1390,7 @@ const Modules = (function () {
       ]);
     });
     if (!draftKids.length) draftKids.push(empty('今日暂无草稿，每日 6:00 自动更新'));
-    const draftCard = card('📝 今日草稿（每日 6:00 自动更新 · 可编辑）', '', draftKids);
+    const draftCard = card('📝 今日草稿' + dailyDate + '（每日 6:00 自动更新 · 可编辑）', '', draftKids);
     draftCard.appendChild(el('button', { class: 'add-btn edit-only', onclick: () => UI.formModal({ title: '添加草稿', fields: [
       { key: 'acct', label: '账号', type: 'select', options: [{ value: 'pet', label: '宠物号' }, { value: 'english', label: '英文号' }] },
       { key: 'title', label: '标题' }, { key: 'body', label: '正文/口播', type: 'textarea' }, { key: 'tags', label: '标签' },
@@ -1393,11 +1399,12 @@ const Modules = (function () {
     c.appendChild(draftCard);
 
     // ===== 2. 爆款拆解 & 二创灵感 =====
-    const trendKids = (x.trends || []).map(function (tr) {
+    const sortedTrends = (x.trends || []).slice().sort(function (a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
+    const trendKids = sortedTrends.map(function (tr) {
       return el('div', { class: 'li trend-li' }, [
         Batch.item(tr.id, function () { x.trends = x.trends.filter(function (y) { return y.id !== tr.id; }); }),
         el('div', { class: 'body' }, [
-          el('div', { class: 't' }, [tr.title, tr.auto ? el('span', { class: 'pill sage' }, '自动') : null]),
+          el('div', { class: 't' }, [tr.title, tr.auto ? el('span', { class: 'pill sage' }, '自动') : null, tr.date ? el('span', { class: 'muted', style: { fontSize: '11px', marginLeft: '6px' } }, tr.date) : null]),
           el('div', { style: { display: 'flex', gap: '6px', margin: '4px 0', flexWrap: 'wrap' } }, [
             el('span', { class: 'pill brown' }, tr.platform || '小红书'),
             el('span', { class: 'pill sage' }, tr.niche || '综合')
@@ -1410,7 +1417,7 @@ const Modules = (function () {
       ]);
     });
     if (!trendKids.length) trendKids.push(empty('暂无爆款拆解，每日 6:00 自动更新'));
-    const trendCard = card('🔥 爆款拆解 & 二创灵感（每日 6:00 自动更新）', '', trendKids);
+    const trendCard = card('🔥 爆款拆解 & 二创灵感' + dailyDate + '（每日 6:00 自动更新）', '', trendKids);
     trendCard.appendChild(el('button', { class: 'add-btn edit-only', onclick: () => UI.formModal({ title: '添加爆款拆解', fields: [
       { key: 'title', label: '标题' },
       { key: 'platform', label: '平台', default: '小红书' },
